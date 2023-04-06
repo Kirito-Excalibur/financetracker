@@ -12,16 +12,22 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100 ">
         <form
-          className="flex flex-col rounded-md border border-red-900 bg-white  shadow-lg  "
+          className="flex w-[22rem] flex-col gap-3 rounded-md  bg-white p-4 shadow-lg  sm:w-[550px]  "
           action=""
         >
-          <span className="flex">
+          <span className="flex items-center justify-between">
             <span>Login</span>
-            <input type="email" className="w-full border-red-700 border" />
+            <input
+              type="email"
+              className="w-[70%] rounded-lg border border-red-700 p-1"
+            />
           </span>
-          <span className="flex">
+          <span className="flex items-center justify-between">
             <span>Password</span>
-            <input type="password" className="w-full border-red-700 border"/>
+            <input
+              type="password"
+              className="w-[70%] rounded-lg border border-red-700 p-1"
+            />
           </span>
         </form>
       </main>
